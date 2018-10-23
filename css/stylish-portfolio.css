@@ -200,7 +200,42 @@ hr.small {
     width: 100%;
     height: 400px;
     color: #fff;
+}
+
+.sala_karma {
+    background: url(../img/sala_karma.jpg) no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+.proximas {
     background: url(../img/nonenon_small.jpg) no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+.sold_out {
+    background: url(../img/sold-out.png) no-repeat center center scroll;
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
+    background-size: contain;
+    -o-background-size: contain;
+}
+
+.sinatra {
+    background: url(../img/nonenon_small.jpg) no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+.sinatra_decembro {
+    background: url(../img/sinatra_diciembre.jpg    ) no-repeat center center scroll;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -211,6 +246,7 @@ hr.small {
 
 .portfolio {
     padding: 50px 0;
+    background-color: #cd80d2;
 }
 
 .portfolio-item {
