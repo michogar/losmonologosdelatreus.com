@@ -44,13 +44,7 @@
                         <a href=".." onclick=$("#menu-close").click();>Volver al incio</a>
                 </li>
                 <li>
-                    <a href="#sinatra_decembro" onclick=$("#menu-close").click();>Sábado, 15 de Diciembre, 23h</a>
-                </li>
-                <li>
-                    <a href="#sala_karma" onclick=$("#menu-close").click();><strike>Domingo, 18 de Novembro, 21h</strike></a>
-                </li>
-                <li>
-                    <a href="#sinatra_outubro" onclick=$("#menu-close").click();><strike>Sábado, 6 de Outubro, 23h</strike></a>
+                    <a href="#sinatra_mayo" onclick=$("#menu-close").click();>Jaime Caravaca, 7 de Mayo, 20h</a>
                 </li>
             </ul>
         </nav>
@@ -58,29 +52,11 @@
         <!-- Callout -->
         <aside id="sinatra_decembro" class="callout sinatra_decembro">
             <div class="text-vertical-center">
-                <h1>Sábado, 15 de Diciembre, 23h</h1>
-                <h1>Sinatra Coctel Bar</h1>
+                <h1>Jaime Caravaca</h1>
+                <h2>Sábado, 7 de Mayo, 20h</h2>
+                <h2>Sinatra Coctel Bar</h2>
                 <h3>Rúa Fermín Penzol, 6, 36202 Vigo, Pontevedra</h3>
-                <a href="mailto:enconartereservas@gmail.com?subject=[RESERVAS Sinatra Decembro]" class="btn btn-light btn-lg">Reservar entradas</a>
-            </div>
-        </aside>
-        
-        <!-- Callout -->
-        <aside id="sala_karma" class="callout sala_karma">
-            <div class="text-vertical-center sold_out">
-                <h1>Domingo, 18 de Novembro, 21h</h1>
-                <h1>Sala Karma</h1>
-                <h3>Rúa Marqués de Riestra, 34, 36001 Pontevedra</h3>
-            </div>
-        </aside>
-        
-        <!-- Callout -->
-        <aside id="sinatra_outubro" class="callout sinatra">
-            <div class="text-vertical-center sold_out">
-                <h1>Sábado, 6 de Outubro, 23h</h1>
-                <h1>Sinatra Coctel Bar</h1>
-                <h3>Rúa Fermín Penzol, 6, 36202 Vigo, Pontevedra</h3>
-                <!--a href="#" class="btn btn-light btn-lg">Reservar entradas</a-->
+                <a href="https://www.instagram.com/arantxatreus/" class="btn btn-light btn-lg">Reservar entradas</a>
             </div>
         </aside>
         
@@ -89,7 +65,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12 text-center">
-                        <a href="mailto:enconarteproducciones@gmail.com?subject=Contratación" class="btn btn-lg btn-light">Contratar</a>
+                        <a href="mailto:figueroatreus@yahoo.es?subject=Me molan los Monólogos de la Treus"" class="btn btn-lg btn-light">Contactar</a>
                     </div>
                 </div>
             </div>
@@ -100,32 +76,24 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-10 col-lg-offset-1 text-center">
-                        <h4><strong>Enconarte Producciones</strong>
+                        <h4><strong>Los Monólogos de la Treus</strong>
                         </h4>
-                        <p>O Mundo
+                        <p>El Mundo
                             <br></p>
-                            <ul class="list-unstyled">
-                                <li><i class="fa fa-phone fa-fw"></i> (0034) seis seis seis cero sete cero seis cinco un</li>
-                                <li><i class="fa fa-envelope-o fa-fw"></i> <a href="mailto:enconarteproducciones@gmail.com">enconarteproducciones@gmail.com</a>
-                                </li>
-                            </ul>
-                            <br>
-                            <ul class="list-inline">
-                                <li>
-                                    <a href="https://www.facebook.com/pages/category/Art/Enconarte-Producciones-1984950285076333/"><i class="fa fa-facebook fa-fw fa-3x"></i></a>
-                                </li>
-                                <li>
-                                    <a href="https://twitter.com/enconarte"><i class="fa fa-twitter fa-fw fa-3x"></i></a>
-                                </li>
-                            </ul>
-                            <hr class="small">
-                            <p class="text-muted">Copyright &copy; Enconarte Producciones 2018</p>
-                        </div>
+                        <ul class="list-unstyled">
+                            <li><i class="fa fa-phone fa-fw"></i> (0034) seis seis seis cero siete cero seis cinco uno</li>
+                            <li><i class="fa fa-envelope-o fa-fw"></i> <a href="mailto:figueroatreus@yahoo.es">figueroatreus@yahoo.es</a>
+                            </li>
+                        </ul>
+                        <br>
+                        <hr class="small">
+                        <p class="text-muted">Copyright &copy; Los Monólogos de la Treus</p>
                     </div>
                 </div>
-                <a id="to-top" href="#top" class="btn btn-dark btn-lg"><i class="fa fa-chevron-up fa-fw fa-1x"></i></a>
-            </footer>
-            
+            </div>
+            <a id="to-top" href="#top" class="btn btn-dark btn-lg"><i class="fa fa-chevron-up fa-fw fa-1x"></i></a>
+        </footer>
+                
             <!-- jQuery -->
             <script src="../js/jquery.js"></script>
             
@@ -184,26 +152,6 @@
                         }
                     }
                 });
-                // Disable Google Maps scrolling
-                // See http://stackoverflow.com/a/25904582/1607849
-                // Disable scroll zooming and bind back the click event
-                var onMapMouseleaveHandler = function(event) {
-                    var that = $(this);
-                    that.on('click', onMapClickHandler);
-                    that.off('mouseleave', onMapMouseleaveHandler);
-                    that.find('iframe').css("pointer-events", "none");
-                }
-                var onMapClickHandler = function(event) {
-                    var that = $(this);
-                    // Disable the click handler until the user leaves the map area
-                    that.off('click', onMapClickHandler);
-                    // Enable scrolling zoom
-                    that.find('iframe').css("pointer-events", "auto");
-                    // Handle the mouse leave event
-                    that.on('mouseleave', onMapMouseleaveHandler);
-                }
-                // Enable map zooming with mouse scroll when the user clicks the map
-                $('.map').on('click', onMapClickHandler);
             </script>
             
         </body>
